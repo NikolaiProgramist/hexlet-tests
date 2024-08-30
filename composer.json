@@ -1,0 +1,12 @@
+{
+    "name": "admin/hexlet-tests",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NikolaiProgramist",
+            "email": "nikluk2005@mail.ru"
+        }
+    ],
+    "require": {}
+}
