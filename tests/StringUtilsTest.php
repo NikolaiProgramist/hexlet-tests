@@ -1,10 +1,12 @@
 <?php
 
-if (StringUtils\capitalize('hello') !== 'Hello') {
+require_once '../src/StringUtils.php';
+
+if (capitalize('hello') !== 'Hello') {
     throw new \Exception('Функция работает неверно!');
 }
 
-if (StringUtils\capitalize('') !== '') {
+if (capitalize('') !== '') {
     throw new \Exception('Функция работает неверно!');
 }
 
