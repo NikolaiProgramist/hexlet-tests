@@ -11,5 +11,10 @@
     "require": {
         "larapack/dd": "^1.1",
         "webmozart/assert": "^1.11"
+    },
+    "autoload": {
+        "files": [
+            "src/StringUtils.php"
+        ]
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Hexlet\Tests\StringUtils;
+
 function capitalize(string $text): string
 {
     if ($text === '') {
