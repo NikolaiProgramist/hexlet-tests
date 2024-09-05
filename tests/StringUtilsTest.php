@@ -6,18 +6,11 @@ if (file_exists($autoloadPath)) {
     require_once $autoloadPath;
 }
 
+use Webmozart\Assert\Assert;
 use function Hexlet\Tests\StringUtils\capitalize;
 
-if (capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
-
-if (capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
-
-if (capitalize('0123') !== '0123') {
-    throw new \Exception('Функция работает неверно!');
-}
+Assert::eq(capitalize('hello'), 'Hello');
+Assert::eq(capitalize(''), '');
+Assert::eq(capitalize('0123'), '0123');
 
 echo 'Все тесты пройдены!';
